@@ -12,6 +12,19 @@ a {
 ul,
 li {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+.container {
+    max-width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+
 }
 
 button {
@@ -20,6 +33,31 @@ button {
 }
 
 /* #region header */
+
+.header {
+    border-bottom: 1px solid #e7e9fc;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.address-list {
+    display: flex;
+    align-items: center;
+}
 
 .logo-header {
     font-family: "Raleway", sans-serif;
@@ -32,12 +70,18 @@ button {
     text-decoration: none;
 }
 
+.header-logo {
+    padding: 24px 0;
+    margin-right: 76px;
+}
+
 span.logo_style {
     color: #2e2f42;
 }
 
 
 .item-nav-link {
+    padding: 24px 0;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -52,10 +96,18 @@ span.logo_style {
 
 .address-header {
     font-style: normal;
+    margin-left: auto;
 }
 
+.address-list {
+    font-style: normal;
+    margin-left: auto;
+    gap: 40px;
+}
 
 .item-address-link {
+    display: block;
+    padding: 24px 0;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -73,6 +125,15 @@ span.logo_style {
 /* #region hero */
 .hero {
     background-color: #2e2f42;
+    padding: 185px 0;
+    height: 600px;
+}
+
+.hero .hero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero-title {
@@ -82,15 +143,22 @@ span.logo_style {
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
+    max-width: 496px;
+    margin: 0 auto;
 }
 
 .hero-btn {
+    background-color: #4d5ae5;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: #fff;
-    background-color: #4d5ae5;
+    display: block;
+    padding: 16px 32px;
+    border-radius: 4px;
+    margin: 45px 0 auto;
+
 }
 
 .hero-btn:hover,
@@ -104,6 +172,30 @@ span.logo_style {
 /* #region features */
 .features {
     background-color: #fff;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    clip-path: inset(100%);
+    border: 0;
+    white-space: nowrap;
+}
+
+.features-list{
+    padding-top: 120px;
+    padding-bottom: 120px;
+    display: flex;
+    gap: 24px;
+}
+
+.features-list-title{
+    width: calc((100% - 72px) / 4);
 }
 
 
@@ -128,6 +220,16 @@ span.logo_style {
 /* #region team */
 .team {
     background-color: #f4f4fd;
+    margin: 0 auto;
+    width: 1440px;
+    height: 732px;
+}
+
+.team-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .team-title {
@@ -137,14 +239,26 @@ span.logo_style {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2e2f42;
+    padding-top: 120px;
+    padding-bottom: 72px;
 }
 
 .team-list {
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .team-list-title {
     background-color: #FFFFFF;
+    border-radius: 0 0 4px 4px;
+    padding: 0px 0px 32px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 32px;
+    width: calc((100% - 96px) / 4);
+    margin-left: 24px;
 }
 
 .team-item-title {
@@ -160,10 +274,17 @@ span.logo_style {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+
 }
 /* #endregion team */
 
 /* #region portfolio */
+
+.portfolio{
+    text-align: center;
+    margin-bottom: 180px;
+    height: 1000px;
+}
 
 
 .portfolio-title {
@@ -172,28 +293,59 @@ span.logo_style {
     letter-spacing: 0.02em;
     text-align: center;
     text-transform: capitalize;
-    color: #2e2f42;}
+    color: #2e2f42;
+    padding-top: 120px;
+    padding-bottom: 72px;
+}
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 120px;
+}
+
+
+.portfolio-list-title{
+    border: 1px solid #e7e9fc;
+    margin-bottom: 20px;
+}
 
 
 .portfolio-item-title {
+    margin-top: 20px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    text-align: left;
+    margin-left: 16px;
 }
 
 .portfolio-item-text {
+    margin-bottom: 20px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    text-align: left;
+    margin-left: 16px;
 }
 /* #endregion portfolio */
 
 /* #region Footer */
+
 .footer {
     background-color: #2e2f42;
+    padding: 100px 0;
+}
+.footer-container {
+    width: 264px;
+    height: 112px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
 }
 
 .logo-footer {
@@ -204,6 +356,8 @@ span.logo_style {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .logo-style {
@@ -211,6 +365,8 @@ span.logo_style {
 }
 
 .footer-item-text {
+    max-width: 264px;
+    font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;

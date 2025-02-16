@@ -179,6 +179,7 @@ span.logo_style {
 /* #region features */
 .features {
     background-color: #fff;
+    padding: 120px 0;
 }
 
 .visually-hidden {
@@ -212,6 +213,7 @@ span.logo_style {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 .features-item-text {
@@ -230,6 +232,7 @@ span.logo_style {
     margin: 0 auto;
     width: 1440px;
     height: 732px;
+    padding: 120px 0;
 }
 
 .team-container{
@@ -248,23 +251,25 @@ span.logo_style {
     color: #2e2f42;
     padding-top: 120px;
     padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 
 .team-list {
     display: flex;
     flex-wrap: wrap;
+    gap: 24px;
 }
 
 .team-list-title {
     background-color: #FFFFFF;
-    border-radius: 0 0 4px 4px;
+    border-radius: 0px 0px 4px 4px;
     padding: 0px 0px 32px 0px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     gap: 32px;
-    width: calc((100% - 96px) / 4);
+    width: calc((100% - 72px) / 4);
     margin-left: 24px;
 }
 
@@ -274,6 +279,7 @@ span.logo_style {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 .team-item-text {
@@ -281,8 +287,9 @@ span.logo_style {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
-
 }
+
+
 /* #endregion team */
 
 /* #region portfolio */
@@ -291,6 +298,7 @@ span.logo_style {
     text-align: center;
     margin-bottom: 180px;
     height: 1000px;
+    padding: 120px 0;
 }
 
 
@@ -308,6 +316,8 @@ span.logo_style {
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
     justify-content: space-between;
     margin-bottom: 120px;
 }
@@ -316,6 +326,7 @@ span.logo_style {
 .portfolio-list-title{
     border: 1px solid #e7e9fc;
     margin-bottom: 20px;
+    width: calc((100% - 48px) / 3);
 }
 
 
@@ -328,6 +339,7 @@ span.logo_style {
     color: #2e2f42;
     text-align: left;
     margin-left: 16px;
+    margin-bottom: 8px;
 }
 
 .portfolio-item-text {

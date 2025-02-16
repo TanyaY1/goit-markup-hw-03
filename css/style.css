@@ -379,7 +379,6 @@ span.logo_style {
 }
 
 .logo-footer {
-    display: inline-block;
     margin-bottom: 16px;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -388,6 +387,7 @@ span.logo_style {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    display: inline-block;
 }
 
 .logo-style {

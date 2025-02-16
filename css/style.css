@@ -272,6 +272,11 @@ span.logo_style {
     width: calc((100% - 72px) / 4);
     margin-left: 24px;
 }
+.team-info{
+    padding: 32px 0;
+    text-align: center;
+}
+
 
 .team-item-title {
     font-weight: 500;

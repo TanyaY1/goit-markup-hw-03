@@ -373,7 +373,6 @@ span.logo_style {
 .footer-container {
     width: 264px;
     height: 112px;
-    display: flex;
     flex-direction: column;
     margin: 0 auto;
 }

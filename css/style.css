@@ -153,8 +153,8 @@ span.logo_style {
 
 .hero-btn {
     background-color: #4d5ae5;
-    min-height: 169px;
-    height: 56px;
+    min-width: 169px;
+    min-height: 56px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -379,6 +379,8 @@ span.logo_style {
 }
 
 .logo-footer {
+    display: inline-block;
+    margin-bottom: 16px;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -386,8 +388,6 @@ span.logo_style {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-    display: inline-block;
-    margin-bottom: 16px;
 }
 
 .logo-style {
